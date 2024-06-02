@@ -21,27 +21,20 @@ Copy code
 git clone https://github.com/your-username/ecommerce-project.git
 Navigate to the project directory:
 
-bash
-Copy code
 cd ecommerce-project
 Install dependencies:
 
-bash
-Copy code
+
 npm install
 Set up environment variables:
 
 Create a .env file in the root directory and add the following variables:
 
-plaintext
-Copy code
 PORT=4000
 MONGODB_URL=mongodb://localhost:27017/ecommerce
 JWT_SECRET=your_secret_key
 Start the server:
 
-bash
-Copy code
 npm start
 Usage
 Register a new user:
@@ -55,27 +48,7 @@ Upon successful login, a JSON web token (JWT) will be generated and returned in 
 Access protected routes:
 
 Include the JWT token in the Authorization header for subsequent requests to protected routes.
-File Structure
-lua
-Copy code
-EcommerceProject/
-│
-├── Controller/
-├── config/
-│   ├── dbConnect.js
-│   └── jwtToken.js
-├── middlewares/
-│   ├── errorHandler.js
-│   └── notFound.js
-├── models/
-│   └── userModel.js
-├── node_modules/
-├── routes/
-│   └── authRoutes.js
-├── .env
-├── index.js
-├── package-lock.json
-└── package.json
+
 Dependencies
 Express.js
 MongoDB
