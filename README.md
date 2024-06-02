@@ -2,22 +2,12 @@
 
 This project implements the functionality of user registration and login in a shopping application.
 
-Table of Contents
-Overview
-Installation
-Usage
-File Structure
-Dependencies
-Contributing
-License
-Overview
 The Ecommerce Project is a Node.js application built with Express.js and MongoDB. It provides APIs for user registration and authentication. Users can create accounts, log in securely, and access protected resources within the application.
 
-Installation
+# Installation
 Clone the repository to your local machine:
 
-bash
-Copy code
+
 git clone https://github.com/your-username/ecommerce-project.git
 Navigate to the project directory:
 
@@ -36,7 +26,8 @@ JWT_SECRET=your_secret_key
 Start the server:
 
 npm start
-Usage
+
+# Usage
 Register a new user:
 
 Send a POST request to /api/user/register with user details (firstname, lastname, email, mobile, password).
@@ -49,14 +40,14 @@ Access protected routes:
 
 Include the JWT token in the Authorization header for subsequent requests to protected routes.
 
-Dependencies
+# Dependencies
+
 Express.js
 MongoDB
 Mongoose
 bcrypt
 jsonwebtoken
-Contributing
+
+#Contributing
 Contributions are welcome! If you'd like to contribute to this project, please fork the repository and submit a pull request.
 
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
